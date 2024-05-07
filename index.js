@@ -55,12 +55,22 @@ const questions = [
     {
         type: 'input',
         message: 'Please provide guidelines on how others can contribute to the project.',
-        name: 'contribution',
+        name: 'contributing',
     },
     {
         type: 'input',
         message: 'Please provide test instructions for the project.',
         name: 'tests',
+    },
+    {
+        type: 'input',
+        message: 'Please provide your GitHub username.',
+        name: 'username',
+    },
+    {
+        type: 'input',
+        message: 'Please provide your email address.',
+        name: 'email',
     },
 ];
 
