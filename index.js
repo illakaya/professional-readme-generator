@@ -73,7 +73,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const md = `${data}`;
+    const md = `${genMd(data)}`;
     fs.writeFile(`./output/${fileName}.md`, md, (err) => {
         err ? console.error(err) : console.log('md file created, it can be found in the output directory.')
     })
