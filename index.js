@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const genMd = require('./utils/generateMarkdown');
 const { type } = require('os');
+const { log } = require('console');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -78,7 +79,21 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    console.log('Welcome to the README.md generator, simplifying the markdown process.');
+    inquirer.prompt(questions).then((answers) => {
+        console.log(answers);
+        inquirer
+            .prompt([
+                {
+                    type: 'input',
+                    message: 'What would you like to name the file?',
+                    name: 'fileName',
+                },
+            ])
+            .then((response) => writeToFile(response.fileName, answers));
+    });
+}
 
 // Function call to initialize app
 init();
