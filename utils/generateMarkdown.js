@@ -36,27 +36,27 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     switch (license) {
         case 'Apache License 2.0':
-            return ' https://opensource.org/licenses/Apache-2.0';
+            return 'https://opensource.org/licenses/Apache-2.0';
         case 'GNU Affero General Public License v3.0':
-            return ' https://www.gnu.org/licenses/agpl-3.0';
+            return 'https://www.gnu.org/licenses/agpl-3.0';
         case 'GNU General Public License v3.0':
-            return ' https://www.gnu.org/licenses/gpl-3.0';
+            return 'https://www.gnu.org/licenses/gpl-3.0';
         case 'GNU General Public License v2.0':
-            return ' https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html';
+            return 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html';
         case 'MIT License':
-            return ' https://opensource.org/licenses/MIT';
+            return 'https://opensource.org/licenses/MIT';
         case 'BSD 3-Clause License':
-            return ' https://opensource.org/licenses/BSD-3-Clause';
+            return 'https://opensource.org/licenses/BSD-3-Clause';
         case 'BSD 2-Clause License':
-            return ' https://opensource.org/licenses/BSD-2-Clause';
+            return 'https://opensource.org/licenses/BSD-2-Clause';
         case 'Boost Software License 1.0':
-            return ' https://www.boost.org/LICENSE_1_0.txt';
+            return 'https://www.boost.org/LICENSE_1_0.txt';
         case 'Creative Commons Zero v1.0 Universal':
-            return ' http://creativecommons.org/publicdomain/zero/1.0/';
+            return 'http://creativecommons.org/publicdomain/zero/1.0/';
         case 'Mozilla Public License 2.0':
-            return ' https://opensource.org/licenses/MPL-2.0';
+            return 'https://opensource.org/licenses/MPL-2.0';
         case 'The Unlicense':
-            return ' http://unlicense.org/';
+            return 'http://unlicense.org/';
         case 'None':
           return '';
         default:
@@ -66,13 +66,23 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+    if (license === 'None') {
+        return 'No license';
+    } else {
+// Format exactly how you want it to render
+        return `${renderLicenseBadge(license)}  
+Please refer to the LICENSE in the repo or go to ${renderLicenseLink(license)}.`
+    }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     return `# ${data.title}
 
+${renderLicenseSection(data.license)}
 `;
+// Test the renderLicenseSection function
 }
 
 module.exports = generateMarkdown;
