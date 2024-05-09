@@ -2,8 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const genMd = require('./utils/generateMarkdown');
-const { type } = require('os');
-const { log } = require('console');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -76,7 +74,12 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const md = `${data}`;
+    fs.writeFile(`./output/${fileName}.md`, md, (err) => {
+        err ? console.error(err) : console.log('md file created, it can be found in the output directory.')
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
