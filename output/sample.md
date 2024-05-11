@@ -7,10 +7,10 @@ Quickly and easily generate a README file by using a command-line application to
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#Credits)
+- [Credits](#credits)
 - [License](#license)
-- [Contribution](#contribution)
-- [Testing](#tests)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
@@ -30,11 +30,11 @@ USYD Bootcamp, Frank Fu and Sean Butler
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 Please refer to the LICENSE in the repo or go to https://opensource.org/licenses/MIT.
 
-## Contribution
+## Contributing
 
 Currently there is no way for others to contribute to the project.
 
-## Testing
+## Tests
 
 Testing will be provided at a later date
 

@@ -88,10 +88,10 @@ ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#Credits)
+- [Credits](#credits)
 - [License](#license)
-- [Contribution](#contribution)
-- [Testing](#tests)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
