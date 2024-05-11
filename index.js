@@ -27,7 +27,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide the collaborators of the project.',
+        message: 'Please provide the collaborators of the project or parties that you would like to credit.',
         name: 'credit',
     },
     {
