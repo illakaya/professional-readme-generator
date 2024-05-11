@@ -5,12 +5,15 @@
 
 Quickly and easily generate a README file by using a command-line application to generate one.
 
+![image](https://github.com/illakaya/professional-readme-generator/assets/161125561/4d6d4c16-abf5-4c75-ad8e-07eb53fbc21b)
+
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#Credits)
 - [License](#license)
-- [Contribution](#contribution)
+- [Contributing](#contributing)
 - [Testing](#tests)
 - [Questions](#questions)
 
