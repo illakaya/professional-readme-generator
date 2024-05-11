@@ -1,4 +1,5 @@
 # Professional README Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -7,23 +8,23 @@ Quickly and easily generate a README file by using a command-line application to
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Credits](#Credits)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Testing](#tests)
 - [Questions](#questions)
 
 ## Installation
 
-Run `npm i` to install necessary packages in the terminal.
+Run `npm i` in the terminal to install the necessary packages to start the application.
 
 ## Usage
 
-Run `node index.js` in the terminal to start the application.
+Run `node index.js` in the terminal to start the application.  
 
 ## Credits
 
-USYD Bootcamp, Frank Fu and Sean Butler
+I would like to thank USYD Coding Bootcamp, Instructor Frank Fu and Teaching Assistant Sean for providing starter code and foundational knowledge so that I could complete the project.
 
 ## License
 
@@ -32,13 +33,14 @@ Please refer to the LICENSE in the repo or go to https://opensource.org/licenses
 
 ## Contributing
 
-Currently there is no way for others to contribute to the project.
+You can contribute to the project by forking the repository.
 
 ## Tests
 
-Testing will be provided at a later date
+Testing will be provided at a later date.
 
 ## Questions
 
+If you have any questions about the repository, please contact me via email.
 - GitHub: [illakaya](https://github.com/illakaya)
 - Email: [mjnguyen.dev@gmail.com](mailto:mjnguyen.dev@gmail.com)
