@@ -109,8 +109,21 @@ ${data.credit}
 ## License
 
 ${renderLicenseSection(data.license)}
-`;
 
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+${data.tests}
+
+## Questions
+
+If you have any questions about the repository, please contact me via email.
+- GitHub: [${data.username}](https://github.com/${data.username})
+- Email: [${data.email}](mailto:${data.email})
+`;
 }
 
 module.exports = generateMarkdown;
